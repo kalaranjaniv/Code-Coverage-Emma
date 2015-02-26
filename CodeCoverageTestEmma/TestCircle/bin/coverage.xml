@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- EMMA v2.0.5312 report, generated Tue Nov 05 19:18:56 CST 2013 -->
+
+<report>
+  <stats>
+    <packages value="1"/>
+    <classes value="10"/>
+    <methods value="21"/>
+    <srcfiles value="1"/>
+    <srclines value="143"/>
+  </stats>
+  <data>
+    <all name="all classes">
+      <coverage type="class, %" value="100% (10/10)"/>
+      <coverage type="method, %" value="100% (21/21)"/>
+      <coverage type="block, %" value="92%  (698/761)"/>
+      <coverage type="line, %" value="92%  (131/143)"/>
+
+      <package name="com.example.circlearea">
+        <coverage type="class, %" value="100% (10/10)"/>
+        <coverage type="method, %" value="100% (21/21)"/>
+        <coverage type="block, %" value="92%  (698/761)"/>
+        <coverage type="line, %" value="92%  (131/143)"/>
+
+        <srcfile name="AreaCircle.java">
+          <coverage type="class, %" value="100% (10/10)"/>
+          <coverage type="method, %" value="100% (21/21)"/>
+          <coverage type="block, %" value="92%  (698/761)"/>
+          <coverage type="line, %" value="92%  (131/143)"/>
+
+          <class name="AreaCircle$californiaTimeThread">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="58%  (38/65)"/>
+            <coverage type="line, %" value="67%  (6/9)"/>
+
+            <method name="run (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="54%  (32/59)"/>
+              <coverage type="line, %" value="62%  (5/8)"/>
+            </method>
+            <method name="AreaCircle$californiaTimeThread (AreaCircle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+          <class name="AreaCircle$indiaTimeThread">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="60%  (40/67)"/>
+            <coverage type="line, %" value="67%  (6/9)"/>
+
+            <method name="run (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="56%  (34/61)"/>
+              <coverage type="line, %" value="62%  (5/8)"/>
+            </method>
+            <method name="AreaCircle$indiaTimeThread (AreaCircle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+          <class name="AreaCircle$1">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="96%  (153/159)"/>
+            <coverage type="line, %" value="88%  (29/33)"/>
+
+            <method name="handleMessage (Message): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="96%  (147/153)"/>
+              <coverage type="line, %" value="88%  (28/32)"/>
+            </method>
+            <method name="AreaCircle$1 (AreaCircle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+          <class name="AreaCircle$2">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="98%  (149/152)"/>
+            <coverage type="line, %" value="92%  (23/25)"/>
+
+            <method name="onClick (View): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="98%  (143/146)"/>
+              <coverage type="line, %" value="92%  (22/24)"/>
+            </method>
+            <method name="AreaCircle$2 (AreaCircle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+          <class name="AreaCircle">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (3/3)"/>
+            <coverage type="block, %" value="100% (117/117)"/>
+            <coverage type="line, %" value="100% (25/25)"/>
+
+            <method name="AreaCircle (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (17/17)"/>
+              <coverage type="line, %" value="100% (5/5)"/>
+            </method>
+            <method name="onCreate (Bundle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (93/93)"/>
+              <coverage type="line, %" value="100% (18/18)"/>
+            </method>
+            <method name="onCreateOptionsMenu (Menu): boolean">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (7/7)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+          </class>
+          <class name="AreaCircle$3">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (10/10)"/>
+            <coverage type="line, %" value="100% (3/3)"/>
+
+            <method name="AreaCircle$3 (AreaCircle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="onClick (View): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (4/4)"/>
+              <coverage type="line, %" value="100% (2/2)"/>
+            </method>
+          </class>
+          <class name="AreaCircle$4">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (37/37)"/>
+            <coverage type="line, %" value="100% (8/8)"/>
+
+            <method name="AreaCircle$4 (AreaCircle): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (6/6)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+            <method name="onClick (View): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (31/31)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
+            </method>
+          </class>
+          <class name="AreaCircle$JobThread">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (87/87)"/>
+            <coverage type="line, %" value="100% (18/18)"/>
+
+            <method name="AreaCircle$JobThread (AreaCircle, Handler): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (9/9)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="run (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (78/78)"/>
+              <coverage type="line, %" value="100% (15/15)"/>
+            </method>
+          </class>
+          <class name="AreaCircle$areaThread">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (35/35)"/>
+            <coverage type="line, %" value="100% (8/8)"/>
+
+            <method name="AreaCircle$areaThread (AreaCircle, double, double): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (12/12)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="run (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (23/23)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+          </class>
+          <class name="AreaCircle$circumThread">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (2/2)"/>
+            <coverage type="block, %" value="100% (32/32)"/>
+            <coverage type="line, %" value="100% (8/8)"/>
+
+            <method name="AreaCircle$circumThread (AreaCircle, double, double): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (12/12)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+            <method name="run (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (20/20)"/>
+              <coverage type="line, %" value="100% (4/4)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+    </all>
+  </data>
+</report>

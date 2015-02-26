@@ -1,0 +1,20 @@
+[EMMA v2.0.5312 report, generated Fri Nov 15 00:10:46 CST 2013]
+-------------------------------------------------------------------------------
+OVERALL COVERAGE SUMMARY:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+100% (10/10)	100% (21/21)	96%  (733/761)	94%  (135/143)	all classes
+
+OVERALL STATS SUMMARY:
+
+total packages:	1
+total classes:	10
+total methods:	21
+total executable files:	1
+total executable lines:	143
+
+COVERAGE BREAKDOWN BY PACKAGE:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+100% (10/10)	100% (21/21)	96%  (733/761)	94%  (135/143)	com.example.circlearea
+-------------------------------------------------------------------------------

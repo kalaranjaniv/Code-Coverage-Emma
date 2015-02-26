@@ -1,0 +1,178 @@
+---=== HowTo.Coverage.txt ===---
+
+------------------------------------------------------------
+
+Contents:
+
+I.	Overview
+II.	Installing Emma
+III.	Initializing Build Environment
+IV.	Executing the Emulator
+V.	Building+Installing App
+VI.	Building+Installing+Testing Coverage
+
+------------------------------------------------------------
+
+
+
+I.	Overview
+------------------------------------------------------------
+
+The purpose of this document is to provide to steps to
+prepare, build, install and initiate a coverage test of the
+TempCalc Android application.  The following test requires
+knowledge of the following items: 
+
+- Eclipse GUI development environment
+- Unix/Linux/BSD command line environment
+- ANT build tools
+- General Android knowledge
+
+
+The following steps have been known to work on the following
+platforms: 
+- MacOSX 10.8.5
+-- Robotium-solo-4.3.1
+-- EclEmma [installed from the Eclipse store]
+-- Android adt-bundle-mac-x86_64-20130729
+
+
+
+II.	Installing Emma
+------------------------------------------------------------
+
+The first step in preparing the coverage workflow is 
+installing the EclEmma tool.  The easiest method is using the
+built-in Eclipse "store" installation.  Refer to the following
+website [Option 2] for more details on doing so: 
+
+http://www.eclemma.org/installation.html
+
+
+
+
+III.	Initializing Build Environment
+------------------------------------------------------------
+
+Once you have installed the EclEmma tool, you need to setup 
+your build and execution environment from the command line.  
+
+First, open an X11 shell [its important that its an X11 shell].
+
+If you do not already have the android tools from the adt package
+in your default path, I would highly suggest doing so.  For example,
+if the adt package is located at: 
+
+/Users/foo/adt-bundle-mac-x86_64-20130729/
+
+..use the following command line environment [Bash] to setup
+the necessary PATH environment variable: 
+
+$> export PATH=$PATH:/Users/foo/adt-bundle-mac-x86_64-20130729/sdk/tools:/Users/foo/adt-bundle-mac-x86_64-20130729/sdk/platform-tools/
+
+Now execute the following to make sure it's correct: 
+
+$> which android
+/Users/foo/adt-bundle-mac-x86_64-20130729/sdk/tools/android
+
+
+Now that the tools are in your PATH environment, we need to
+initialize the android build system for Ant.  Change
+directories to your project directory.  For this example, 
+our project directory is in: 
+
+/Users/foo/workspace/TempCalc/
+
+$> cd /Users/foo/workspace/TempCalc/
+
+Now change directories to the "MainActivity"
+
+$> MainActivity
+
+Execute the following android script to initialize the build: 
+
+$> android update project --path . --subprojects
+
+You should now see a "build.xml" file in the local directory.  
+Now we need to initialize the test project driver [TempCalcTest].
+Execute the following command to do so: 
+
+$> android update test-project -m `pwd` -p ../TempCalcTest/
+
+
+
+IV.	Executing the Emulator
+------------------------------------------------------------
+
+Now that the build system is ready, we need to create a
+new emulator that represents a "Galaxy Nexus" device
+configuration.  This is a sample configuration
+provided by the ADT environment.  The easiest way to do 
+this is using the Eclipse GUI.  Just remember what you name
+the emulator device as we'll use it in the next step.  
+
+Note: older [slower] devices don't execute the tests
+correctly.  As such, its important to use this device config.
+
+
+Now that you have the device created, you need to go back to 
+the command line shell and start an emulator: 
+
+$> emulator -avd name &
+...where "name" is your name given to the emulator from above. 
+Note that the ampersand is important!!  It forks a new shell
+and opens the window while allow you to continue to execute
+commands in the current shell. 
+
+You should now see your emulator booting.  Wait until its
+booted to the home screen before continuing!! 
+
+
+
+V.	Building+Installing App
+------------------------------------------------------------
+
+
+Now that your emulator is running, we need to build and 
+install the base app into the emulator environment.  
+
+Make sure you're in the "MainActivity" directory 
+and execute the following: 
+
+$> ant install
+
+You should see quite a bit of textual log data
+and a successful installation statement at the end.  
+Now we're ready to build+execute the coverage test.  
+
+
+VI.	Building+Installing+Testing Coverage
+------------------------------------------------------------
+
+If you're still in the "MainActivity" directory, we need
+to move to the TempCalcTest source directory.  
+
+$> cd ../TempCalcTest/
+
+Make sure there is a "build.xml" in the current directory.
+If not, go back to Section III.  
+
+In order to get the test environment to run correctly, 
+we need to move the Robotium jar file into the 'libs' 
+directory.  You can do so via the following: 
+
+$> cp ./Robotium/*.jar ./libs/
+
+Now we're ready to build+install+execute the coverage test. 
+Use the following command line to do so: 
+
+$> ant emma debug install test
+
+..at this point, the tests should be running and you'll
+see the respective test output in the shell.  Once its 
+complete, the coverage test output will be found 
+in ./bin/.  You'll need to look at "coverage.html"
+
+EOF
+
+
